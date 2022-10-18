@@ -2,11 +2,7 @@
 #include <string.h>
 #include <getopt.h>
 
-/*
-	touch .gitignore
-	echo *.exe  >> .gitignore
-	git add .gitignore
-*/
+
 /*
 
 % pwd
