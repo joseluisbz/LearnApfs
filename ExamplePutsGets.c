@@ -5,6 +5,7 @@
 /*
 	touch .gitignore
 	echo *.exe  >> .gitignore
+	git add .gitignore
 */
 /*
 
