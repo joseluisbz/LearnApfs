@@ -29,8 +29,13 @@ drwx------+ 15 joseluisbz  staff    480 Aug 17 16:02 ..
 
 % ExamplePutsGets
 zsh: command not found: ExamplePutsGets
+
+On macOS
 % ./ExamplePutsGets
 %
+
+On Windows!!!
+λ .\ExamplePutsGets
 
 % ls -al
 total 88
