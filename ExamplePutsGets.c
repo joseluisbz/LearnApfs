@@ -67,9 +67,6 @@ https://pablohaya.com/2013/10/12/diferencia-entre-scanf-gets-y-fgets/
 /*
 https://www.tutorialspoint.com/c_standard_library/stdio_h.htm
 
-https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
-
-https://www.tutorialspoint.com/c_standard_library/c_function_fread.htm
 https://www.tutorialspoint.com/c_standard_library/c_function_fwrite.htm
 https://stackoverflow.com/a/2751636
 
@@ -111,7 +108,7 @@ int main (int num_arg, char **arg_array) {
 
 
    /*Se escribe init_string*/
-   fputs(init_string, fp);
+   fwrite(init_string, sizeof(init_string), 1, fp);
    printf("Was written the Initial String:%s\n\n", init_string);
    fgetpos(fp, &curr_position);
    printf("Current Posicion: %lu:", curr_position);
@@ -142,7 +139,7 @@ int main (int num_arg, char **arg_array) {
 
    /*Se escribe second_string*/
    fsetpos(fp, &init_position);
-   fputs(second_string, fp);
+   fwrite(second_string, 1, strlen(second_string), fp);
    printf("Was written the Second String:\n%s\n", second_string);
    fgetpos(fp, &curr_position);
    printf("Current Posicion (After Write): %lu:", curr_position);
