@@ -2,18 +2,6 @@
 #include <string.h>
 #include <getopt.h>
 
-/*
-git init -b master
-git add .
-git commit -m "Example Puts and Gets in C"
-git remote add origin https://github.com/joseluisbz/LearnApfs.git
-git remote -v
-git push -u origin master (ERROR)
-git remote remove origin
-git remote add origin git@github.com:joseluisbz/LearnApfs.git
-*/
-
-
 
 /*
 
