@@ -65,6 +65,7 @@ https://pablohaya.com/2013/10/12/diferencia-entre-scanf-gets-y-fgets/
 */
 
 /*
+https://www.tutorialspoint.com/c_standard_library/stdio_h.htm
 
 https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
 
@@ -127,13 +128,14 @@ int main (int num_arg, char **arg_array) {
 
    /*Se leen 2 caracteres desde la posición 2*/
    fseek(fp, 2, SEEK_SET);
-   printf( "%s\n", fgets(read_string, 3, fp));
+   fread(read_string, 2, 1, fp);
+   printf("%s\n", read_string);
    printf("Was read 2 characters from position 2\n\n");
 
 
    /*Se leen 4 caracteres desde la posición 0*/
    fsetpos(fp, &init_position);
-   fgets(read_string, sizeof(init_string), fp);
+   fread(read_string, sizeof(init_string), 1, fp);
    printf( "\"%s\"\n", read_string);
    printf("Was read Initial String characters from position 0\n\n");
 
@@ -171,7 +173,7 @@ int main (int num_arg, char **arg_array) {
    /*Get String*/
    long size_chunk = sizeFile - curr_position;
    char extracted_string[size_chunk];
-   fgets(extracted_string, size_chunk + 1, fp);
+   fread(extracted_string, size_chunk + 1, 1, fp);
    printf("\"%s\"\n", extracted_string);
 
 
