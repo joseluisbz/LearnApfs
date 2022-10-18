@@ -61,7 +61,15 @@ https://www.geeksforgeeks.org/difference-strlen-sizeof-string-c-reviewed/
 */
 
 /*
+https://pablohaya.com/2013/10/12/diferencia-entre-scanf-gets-y-fgets/
+*/
+
+/*
+
+https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
+
 https://www.tutorialspoint.com/c_standard_library/c_function_fread.htm
+https://www.tutorialspoint.com/c_standard_library/c_function_fwrite.htm
 https://stackoverflow.com/a/2751636
 
 https://stackoverflow.com/questions/7414983/how-to-use-the-ansi-escape-code-for-outputting-colored-text-on-console
